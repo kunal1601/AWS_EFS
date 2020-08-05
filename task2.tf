@@ -186,7 +186,7 @@ output "IP_of_instance" {
   value = aws_instance.my_os.public_ip
 }
 
-#download github repo to loacl-system
+#download github repo to local-system
 resource "null_resource" "newlocal2"  {
 depends_on = [ null_resource.newlocal,
              ]
