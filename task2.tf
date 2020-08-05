@@ -128,7 +128,7 @@ resource "aws_efs_file_system_policy" "policy" {
             "Principal": {
                 "AWS": "*"
             },
-            "Resource": "${aws_efs_file_system.allow_nfs.arn}",
+            "Resource": "${aws_efs_file_system.My-EFS.arn}",
             "Action": [
                 "elasticfilesystem:ClientMount",
                 "elasticfilesystem:ClientWrite",
